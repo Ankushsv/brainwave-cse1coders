@@ -1,0 +1,29 @@
+body{
+   
+    background-image: url("/static/freepik__expand__90297.png");
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin:5rem;
+   gap:10px;
+}
+.collect{
+    padding: 6px;
+    border-radius: 10px;
+    background-color: burlywood;
+    border: solid brown;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    left:40%;
+}
+.collect:hover{
+    background-color: brown;
+    transform: scale(1.1);
+}

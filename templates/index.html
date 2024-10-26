@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>AR T-Shirt Overlay</title>
+</head>
+<body>
+    <h1>AR T-Shirt Overlay</h1>
+    <form method="POST" action="/change_tshirt">
+        <select name="tshirt" onchange="this.form.submit()">
+            <option value="tshirt1">T-Shirt 1</option>
+            <option value="tshirt2">T-Shirt 2</option>
+            <option value="tshirt3">T-Shirt 3</option>
+            <option value="tshirt4">T-Shirt 4</option>
+        </select>
+    </form>
+    <img src="{{ url_for('video_feed') }}" width="720">
+</body>
+</html>
